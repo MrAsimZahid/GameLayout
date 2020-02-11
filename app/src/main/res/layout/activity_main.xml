@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LRtop"
+        android:layout_marginTop="20dp">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/menu"
+            android:src="@drawable/ic_menu"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Search for Game"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_search_black_24dp"
+            android:id="@+id/search_button"
+            android:layout_marginLeft="50dp"
+            android:padding="10dp"/>
+
+
+    </LinearLayout>
+
+<!-- Uppwer layer- -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LRbellowTop"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/LRtop"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trending"
+            android:layout_marginLeft="20dp"
+            >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/Trending"
+            android:src="@drawable/ic_menu"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Trending"
+            android:textSize="10dp"
+            android:layout_below="@+id/Trending"
+            android:layout_marginLeft="25dp"
+
+            />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newrelease"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/NewRelease"
+                android:src="@drawable/ic_menu"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="New Release"
+                android:textSize="10dp"
+                android:layout_below="@+id/NewRelease"
+                android:layout_marginLeft="25dp"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/coming"
+            android:layout_marginLeft="25dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/refresh"
+                android:src="@drawable/ic_menu"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Coming Soon"
+                android:textSize="10dp"
+                android:layout_below="@+id/refresh"
+                android:layout_marginLeft="25dp"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/platform"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/plat"
+                android:src="@drawable/ic_menu"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Platform"
+                android:textSize="10dp"
+                android:layout_below="@+id/plat"
+                android:layout_marginLeft="25dp"
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- Grid of options completed -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/discovernew"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/LRbellowTop">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Discover new releases"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+<!--discover new release heasding-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/release"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/discovernew">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/discover"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:id="@+id/discoverpic"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:fontFamily="serif"
+                android:text="DummyText"
+                android:layout_below="@id/discoverpic"
+                android:id="@+id/singleRow_nameTV"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:fontFamily="serif"
+                android:text="dummy@yahoo.com"
+                android:layout_toRightOf="@+id/singleRow_IV"
+                android:id="@+id/singleRow_emailTV"
+                android:layout_below="@+id/singleRow_nameTV"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+<!-- Streaming -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stream"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/release">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Streaming now"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/streamcontent"
+        android:layout_below="@+id/stream"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singleRow_RL"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/singleRow_IV"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:fontFamily="serif"
+                android:text="DummyText"
+                android:layout_toRightOf="@+id/singleRow_IV"
+                android:id="@+id/singleRow_nameTV"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:fontFamily="serif"
+                android:text="dummy@yahoo.com"
+                android:layout_toRightOf="@+id/singleRow_IV"
+                android:id="@+id/singleRow_emailTV"
+                android:layout_below="@+id/singleRow_nameTV"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <!-- Downlaoding -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/downloadgames"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/streamcontent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Downloaded games"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
