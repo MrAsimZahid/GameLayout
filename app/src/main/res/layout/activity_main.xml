@@ -26,21 +26,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Search for Game"
             android:textSize="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="60dp"
 
             />
 
         <ImageView
+            android:id="@+id/search_button"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_search_black_24dp"
-            android:id="@+id/search_button"
-            android:layout_marginLeft="50dp"
-            android:padding="10dp"/>
+            android:layout_marginLeft="40dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_search_black_24dp" />
 
 
     </LinearLayout>
@@ -63,25 +63,24 @@
             android:layout_marginLeft="20dp"
             >
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/Trending"
-            android:src="@drawable/ic_menu"
-            android:padding="10dp"
-            android:layout_marginLeft="20dp"
-            />
+            <ImageView
+                android:id="@+id/Trending"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_menu" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Trending"
-            android:textSize="10dp"
-            android:layout_below="@+id/Trending"
-            android:layout_marginLeft="25dp"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Trending"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Trending"
+                android:textSize="10dp"
 
-            />
+                />
 
         </RelativeLayout>
 
@@ -93,22 +92,21 @@
             android:layout_marginLeft="30dp">
 
             <ImageView
+                android:id="@+id/NewRelease"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:id="@+id/NewRelease"
-                android:src="@drawable/ic_menu"
+                android:layout_marginLeft="5dp"
                 android:padding="10dp"
-                android:layout_marginLeft="20dp"
-                />
+                android:src="@drawable/ic_menu" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/NewRelease"
+                android:layout_marginLeft="5dp"
                 android:gravity="center"
                 android:text="New Release"
                 android:textSize="10dp"
-                android:layout_below="@+id/NewRelease"
-                android:layout_marginLeft="25dp"
 
                 />
 
@@ -121,22 +119,21 @@
             android:layout_marginLeft="25dp">
 
             <ImageView
+                android:id="@+id/refresh"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:id="@+id/refresh"
-                android:src="@drawable/ic_menu"
+                android:layout_marginLeft="5dp"
                 android:padding="10dp"
-                android:layout_marginLeft="20dp"
-                />
+                android:src="@drawable/ic_menu" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/refresh"
+                android:layout_marginLeft="5dp"
                 android:gravity="center"
                 android:text="Coming Soon"
                 android:textSize="10dp"
-                android:layout_below="@+id/refresh"
-                android:layout_marginLeft="25dp"
 
                 />
 
@@ -149,22 +146,21 @@
             >
 
             <ImageView
+                android:id="@+id/plat"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:id="@+id/plat"
-                android:src="@drawable/ic_menu"
+                android:layout_marginLeft="10dp"
                 android:padding="10dp"
-                android:layout_marginLeft="20dp"
-                />
+                android:src="@drawable/ic_menu" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/plat"
+                android:layout_marginLeft="10dp"
                 android:gravity="center"
                 android:text="Platform"
                 android:textSize="10dp"
-                android:layout_below="@+id/plat"
-                android:layout_marginLeft="25dp"
 
                 />
 
