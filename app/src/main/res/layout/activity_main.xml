@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/LRtop"
@@ -43,12 +43,12 @@
             android:src="@drawable/ic_search_black_24dp" />
 
 
-    </LinearLayout>
+    </GridLayout>
 
 <!-- Uppwer layer- -->
 
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/LRbellowTop"
@@ -166,7 +166,7 @@
 
         </RelativeLayout>
 
-    </LinearLayout>
+    </GridLayout>
 
     <!-- Grid of options completed -->
 
