@@ -116,48 +116,69 @@
                 android:background="@drawable/radius"
                 />
 
-
-
-
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:fontFamily="serif"
-                android:text="DummyText"
-                android:layout_toRightOf="@+id/singleRow_IV"
-                android:id="@+id/singleRow_nameTV"
-                android:textSize="20sp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center|left"
-                android:layout_marginTop="5dp"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:fontFamily="serif"
-                android:text="dummy@yahoo.com"
-                android:layout_toRightOf="@+id/singleRow_IV"
-                android:id="@+id/singleRow_emailTV"
-                android:layout_below="@+id/singleRow_nameTV"
-                android:textSize="12sp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center|left"
-                />
-
-
-
-
-
-
         </RelativeLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/streamcontent"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/rate_review"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+
 
 
 
     </LinearLayout>
+
+    <GridLayout
+
+
+        android:layout_height="wrap_content"
+        android:id="@+id/buttons"
+        android:layout_below="@id/rate">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/downloadBtn"
+            android:text="@string/download"
+            android:textSize="30dp"
+            android:background="@drawable/radius"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moreBtn"
+            android:text="@string/more"
+            android:textSize="30dp"
+            android:background="@drawable/radius"
+            android:layout_marginLeft="20dp"
+            />
+
+
+    </GridLayout>
 
 
 
