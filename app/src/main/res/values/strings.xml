@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">GameLayout</string>
+    <string name="preview">Previews</string>
+    <string name="game_name">Game Name</string>
+    <string name="game_dev_company">Game Developers</string>
+    <string name="rate_review">Ratings and reviews</string>
+    <string name="download">Download More</string>
+    <string name="more">More</string>
+    <string name="streaming">Streaming now</string>
+    <string name="heading_download_game"></string>
 </resources>

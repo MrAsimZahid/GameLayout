@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LRtop"
+        android:layout_marginTop="20dp">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/menu"
+            android:src="@drawable/ic_menu"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Search for Game"
+            android:textSize="20dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/search_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_search_black_24dp" />
+
+
+    </GridLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stream"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/LRtop">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Streaming now"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/streamcontent"
+        android:layout_below="@+id/stream"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singleRow_RL"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/singleRow_IV"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:background="@drawable/radius"
+                />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:id="@+id/singleRow_left_top"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                android:layout_toRightOf="@+id/singleRow_IV"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radius"
+                />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:id="@+id/singleRow_left_below"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                android:layout_toRightOf="@+id/singleRow_IV"
+                android:layout_below="@+id/singleRow_left_top"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius"
+                />
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:fontFamily="serif"
+                android:text="DummyText"
+                android:layout_toRightOf="@+id/singleRow_IV"
+                android:id="@+id/singleRow_nameTV"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:fontFamily="serif"
+                android:text="dummy@yahoo.com"
+                android:layout_toRightOf="@+id/singleRow_IV"
+                android:id="@+id/singleRow_emailTV"
+                android:layout_below="@+id/singleRow_nameTV"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
