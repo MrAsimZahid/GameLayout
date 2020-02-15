@@ -2,9 +2,13 @@ package com.example.gamelayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    private Button guess;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -12,5 +16,17 @@ public class MainActivity extends AppCompatActivity {
     //    setContentView(R.layout.game_full_screen);
         setContentView(R.layout.activity_main);
 
+        guess = findViewById(R.id.button_guess);
+
+        guess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GameDetail.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
+
 }

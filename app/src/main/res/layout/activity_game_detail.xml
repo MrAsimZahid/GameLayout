@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+tools:context=".GameDetail">
 
 
-<RelativeLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -127,25 +128,25 @@
 
     </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/rate"
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/streamcontent"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/streamcontent"
-            android:layout_marginTop="20dp">
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/rate_review"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="@string/rate_review"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
+    </LinearLayout>
 
 
     <RelativeLayout
@@ -197,7 +198,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/buttons"
         android:layout_below="@id/rating"
->
+        >
 
         <TextView
             android:layout_width="wrap_content"
@@ -223,30 +224,6 @@
 
     </GridLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:id="@+id/junk"
-        android:layout_below="@id/buttons"
-        >
-
-
-        <EditText
-            android:id="@+id/textforjunk"
-            android:layout_width="102dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
-
-        <Button
-            android:id="@+id/buttonforjunk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
-    </LinearLayout>
 
 
 </RelativeLayout>
